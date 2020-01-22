@@ -16,6 +16,7 @@ $(document).ready(function() {
       for (var index = numberTwo; index <= numberOne; index += numberTwo) {
         listOfNUmbers.push(index);
       }
+      $("ul").empty();
       $("#output").show();
       listOfNUmbers.forEach(function(number) {
         $("ul").append("<li>" + number + "</li>");
