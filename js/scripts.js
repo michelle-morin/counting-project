@@ -9,6 +9,8 @@ $(document).ready(function() {
 
     if (isNaN(numberOne) || isNaN(numberTwo)) {
       alert("Please enter a number");
+    } else if (numberTwo > numberOne) {
+      alert("You can't count up to " + numberOne + " using " + numberTwo + "!");
     } else {
       var listOfNUmbers = [];
       for (var index = numberTwo; index <= numberOne; index += numberTwo) {
